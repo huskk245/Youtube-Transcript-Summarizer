@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>YouTube Video Transcript Summarizer</h1>
+    <form method="POST">
+        <label for="video_link">Enter YouTube Video Link:</label>
+        <input type="text" name="video_link" id="video_link" required>
+        <button type="submit">Get Transcript and Summary</button>
+    </form>
+    {% if transcript %}
+    <h2>Transcript:</h2>
+    <p>{{ transcript }}</p>
+    <h2>Summary:</h2>
+    <p>{{ summary }}</p>
+    {% endif %}
+</body>
+
+</html>
