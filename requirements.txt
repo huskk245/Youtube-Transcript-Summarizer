@@ -1,0 +1,5 @@
+Flask==3.0.0
+youtube-transcript-api==0.6.1
+nltk==3.8.1
+sumy==0.11.0
+urllib3==2.0.7
